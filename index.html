@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Path</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learning Path</h1>
+        <nav>
+            <ul>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#support">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Login Form -->
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <a href="#register">Don't have an account? Register</a>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register">
+            <h2>Register</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Dashboard -->
+        <section id="dashboard">
+            <h2>Welcome, [User Name]</h2>
+            <div class="progress">
+                <h3>Learning Path Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-completed" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="lessons">
+                <h3>Recent Lessons</h3>
+                <ul>
+                    <li>Lesson 1 <button>Continue</button></li>
+                    <li>Lesson 2 <button>Continue</button></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Account Settings -->
+        <section id="settings">
+            <h2>Account Settings</h2>
+            <form>
+                <label for="profile-name">Name:</label>
+                <input type="text" id="profile-name" required>
+                <label for="profile-email">Email:</label>
+                <input type="email" id="profile-email" required>
+                <label for="current-password">Current Password:</label>
+                <input type="password" id="current-password">
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password">
+                <label for="confirm-new-password">Confirm New Password:</label>
+                <input type="password" id="confirm-new-password">
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+
+        <!-- Support and Contact -->
+        <section id="support">
+            <h2>Support</h2>
+            <form>
+                <label for="support-name">Name:</label>
+                <input type="text" id="support-name" required>
+                <label for="support-email">Email:</label>
+                <input type="email" id="support-email" required>
+                <label for="support-message">Message:</label>
+                <textarea id="support-message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
